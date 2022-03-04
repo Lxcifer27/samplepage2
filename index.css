@@ -974,4 +974,6 @@ footer .row {
     .cards img{
         width: 20%;
     }
+.visible { font-size: 2.5rem }
+
 }
