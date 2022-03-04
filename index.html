@@ -697,9 +697,10 @@
          let slider = $(".slider");
      
          slider.not('.slick-initialized').slick({
-           autoplay: true,
+           autoplay: false,
            infinite: true,
            dots: false,
+           arrows: false,
            slidesToShow: 4,
            slidesToScroll: 1,
            responsive: [
@@ -794,7 +795,7 @@ var btnReveal = function () {
 var TopscrollTo = function () {
   if(window.scrollY!=0) {
     setTimeout(function() {
-      window.scrollTo(0,window.scrollY-30);
+      window.scrollTo(0,window.scrollY-250);
       TopscrollTo();
     }, 5);
   }
