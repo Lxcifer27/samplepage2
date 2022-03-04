@@ -970,7 +970,7 @@ footer .row {
     }
     .newsletterbtn {
         font-size: 1.8rem;
-        padding: 3.5%;
+        padding: 3.4%;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -978,6 +978,6 @@ footer .row {
         width: 20%;
     }
     .visible {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
     }
 }
