@@ -871,8 +871,8 @@ footer .row {
 .visible {
     font-family: 'Font Awesome\ 5 Free';
     position: fixed;
-    bottom: 4.6em;
-    right: 2.5em;
+    bottom: 2.5em;
+    right: 0.5em;
     text-decoration: none;
     padding: 1em;
     font-size: 1rem;
