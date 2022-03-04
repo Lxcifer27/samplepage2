@@ -692,27 +692,40 @@
             <hr><br>
         </div>
         <script>
-            $(document).ready(function () {
-                $('.customer-logos').slick({
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    arrows: false,
-                    dots: false,
-                    pauseOnHover: false,
-                    responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    }, {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    }]
-                });
-            });
+            $(()=>{
+       var createSlick = ()=>{
+         let slider = $(".slider");
+     
+         slider.not('.slick-initialized').slick({
+           autoplay: true,
+           infinite: true,
+           dots: false,
+           slidesToShow: 4,
+           slidesToScroll: 1,
+           responsive: [
+             {
+               breakpoint: 1024,
+               settings: {
+                 slidesToShow: 2,
+                 slidesToScroll: 2,
+                 adaptiveHeight: true,
+               },
+             },
+             {
+               breakpoint: 600,
+               settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+               },
+             },
+           ],
+         });	
+       }
+     
+       createSlick();
+     
+      $(window).on( 'resize orientationchange', createSlick );
+     })
         </script>
     </section>
     <footer>
