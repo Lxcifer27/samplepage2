@@ -81,13 +81,13 @@
 }
 
 .social-nav a i {
-    font-weight: 100 !important;
+    font-weight: 100 ;
 }
 
 i {
     font-family: "FontAwesome", "Font Awesome 5 Free";
     font-style: normal;
-    font-weight: 900 !important;
+    font-weight: 900 ;
 }
 
 .container2 {
@@ -728,6 +728,9 @@ nav.navbar ul.navbar-menu div.dropdown-menu ul li span {
     width: 20%;
     padding: 1%;
 }
+.viewed-products .details {
+    overflow: hidden;
+}
 
 footer {
     padding-top: 1%;
@@ -896,7 +899,7 @@ footer .row {
     .show2,
     .discover,
     .viewed-products:hover .options {
-        display: none !important;
+        display: none ;
     }
 
     .social-nav {
@@ -974,6 +977,7 @@ footer .row {
     .cards img{
         width: 20%;
     }
-.visible { font-size: 5.5rem }
-
+    .visible {
+        font-size: 5.5rem;
+    }
 }
