@@ -1,0 +1,749 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container1 {
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lang-currency,
+.social-nav {
+    width: 50%;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.lang-currency div:hover,
+.social-nav a:hover {
+    transition: color 1.2s ease-in-out;
+    color: red;
+}
+
+.lang-currency .languages,
+.lang-currency .currency {
+    display: inline-block;
+    text-align: center;
+    padding: 0.6rem;
+}
+
+.lang-menu,
+.currency-menu {
+    visibility: hidden;
+    list-style-type: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 110%;
+    transform: translateY(-2em);
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.lang-menu li,
+.currency-menu li {
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.lang-menu li:hover,
+.currency-menu li:hover {
+    transition: all 0.8s ease-in-out;
+    color: red;
+    background-color: white;
+}
+
+.languages:hover .lang-menu,
+.currency:hover .currency-menu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; 
+}
+
+.social-nav a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 0.6rem;
+    float: right;
+}
+.social-nav a i {
+    font-weight: 100!important;
+}
+i {
+    font-family: "FontAwesome", "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900!important;
+}
+.container2 {
+    padding: 1rem;
+    background-color: white;
+}
+.search-wrapper {
+    position: relative;
+	margin: 5px;
+    width: 40%;
+}
+
+.search-wrapper input {
+	border: 1px solid grey;
+	border-radius: 25px 0 0 25px;
+	outline: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 450px;
+}
+
+.search-wrapper #searchbutton {
+    display: inline-block;
+    font-family: "FontAwesome";
+    position: absolute;
+	background-color: red;
+    color: white;
+	border-radius: 0 25px 25px 0;
+    font-size: 1.2rem;
+    padding: 0.55rem;
+    cursor: pointer;
+    width: 15%;
+    text-align: center;
+}
+.search-wrapper #searchbutton:hover {
+    background-color: black;
+}
+
+ .logo {
+    width: 25%;
+    text-align: center;
+    padding: 0.5rem;
+    padding-left: 10rem;
+    cursor: pointer;
+}
+.account-area {
+    text-align: center;
+    right: 0;
+    padding-left: 0;
+    padding-left: 11rem;
+}
+.account-area div {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 100;
+}
+div.account-area div.wishlist-cart span {
+    font-family: "Font Awesome 5 Free", "FontAwesome";
+    padding: 0.2rem;
+}
+
+.container2, .container2 .row {
+    padding-right: 0;
+    margin-right: 0;
+}
+div.account-area span.item-count {
+    font-size: 0.8rem;
+    background-color: rgba(128, 128, 128, 0.247);
+    padding: 6px;
+    border-radius: 50%;
+    margin: 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.register:hover, .login:hover, .wishlist-cart .fa-heart:hover, .wishlist-cart .fa-shopping-cart:hover {
+    cursor: pointer;
+    transition: color 1.2s ease-in-out;
+    color: red;
+}
+nav.navbar {
+    height: auto;
+    padding-bottom: 1rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.418);
+}
+nav.navbar ul.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav.navbar ul.navbar-menu li {
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+.sticky {
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+}
+nav.navbar ul.navbar-menu li:hover {
+    transition: color 0.5s ease-in-out;
+    color: red;
+}
+nav.navbar ul.navbar-menu div.dropdown-menu {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    visibility: hidden;
+    color: black;
+    left: -6px;
+    width: 750px;
+    z-index: 0;
+    padding-top: 2rem;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+nav.navbar ul.navbar-menu div.dropdown-menu ul {
+    list-style-type: none;
+    padding: 1rem;
+    background-color: white;
+}
+nav.navbar ul.navbar-menu div.dropdown-menu ul li {
+    font-size: 14px;
+    width: 100%;
+    padding: 0.5rem;
+    margin-right: 1.2rem;
+    background-color: white;
+}
+nav.navbar ul.navbar-menu div.dropdown-menu ul li h3 {
+    background-color: white;
+}
+nav.navbar ul.navbar-menu li:hover div.dropdown-menu {
+    visibility: visible;
+    z-index: 1;
+}
+nav.navbar ul.navbar-menu div.dropdown-menu ul li span {
+    background-color: white;
+    color: red;
+}
+.slider-area {
+    overflow: hidden;
+}
+.slick-dots {
+    bottom: 5px;
+}
+.slick-prev, .slick-next {
+    display: none;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slider-text {
+    position: absolute;
+    top: 40%;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.readbtn{
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: 5%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.gallery-pic {
+    width: 33%;
+    height: 100%;
+    padding: 1rem;
+    justify-content: center;    
+    overflow: hidden;
+}
+.gallery-pic div {
+    padding: 1rem;
+}
+.gallery-pic div img {
+    width: 100%;
+}
+.gallery-pic div:nth-child(2) {
+    padding-top: 0;
+}
+.gallery-pic div {
+    position: relative;
+    transition: 0.3s;
+}
+.gallery-pic div:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 900ms linear;
+}
+.gallery-pic div:hover::after {
+    background: rgba(255, 255, 255, 0.6);
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 900ms linear;
+}
+.gallery-pic div:hover {
+    left: 0;
+    right: 0;
+	transition: all 900ms linear;
+}
+.gallery-pic div::before {
+    background: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    right: 51%;
+    top: 0;
+    opacity: 1;
+    pointer-events: none;
+}
+.gallery-pic div::after {
+    bottom: 50%;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    opacity: 1;
+    pointer-events: none;
+}
+.gallery-pic div img {
+    width: 100%;
+    transition: 0.3s;
+}
+.container4 .row {
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.container4-heading, .container4-details  {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.hot-products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.product {
+    width: 20%;
+    padding: 1rem;
+    cursor: pointer;
+}
+.product .show1 {
+    width: 100%;
+}
+.product .show2 {
+    opacity: 0;
+    position: absolute;
+    max-width: 235px;
+    width: 100%;
+    margin-left: -240px;
+}
+.product .show2:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.product-name {
+    padding-top: 1rem;
+}
+.product-name, .product-category, .product-cost {
+    text-align: center;
+}
+.product .options {
+    opacity: 0;
+    position: absolute;
+    padding: 0.5%;
+    width: 12%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: -140px;
+    margin-left: 40px;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+}
+.product:hover .options {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.product .options i.options-icons {
+    padding: 5%;
+    font-weight: 900;
+}
+.product .options .options-icons:hover {
+    background-color: red;
+    border-radius: 50%;
+}
+.section-banner {
+    position: relative;
+    padding-top: 2rem;
+    width: 100%;
+}
+.discover {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 10 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 355px;
+    right: 355px;
+    cursor: pointer;
+}
+.discover:hover {
+    background-color: black;
+}
+.row .extra {
+    width: 25%;
+    padding: 3%;
+}
+.row .extra img {
+    vertical-align: middle;
+}
+.row .extra h5 {
+    display: inline-block;
+    padding-left: 1%;
+}
+.row .extra p {
+    font-size: 0.9rem;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+.feature-heading {
+    width: 100%;
+    padding: 0 0 0 2%;
+    margin: 0 0 0 4%;
+    padding: 1%;
+}
+.feature-product {
+    width: 23%;
+    padding: 0 0 1% 2%;
+    margin: 0 0 0 1%;
+    cursor: pointer;
+}
+.feature-product img.show1 {
+    width: 45%;
+    vertical-align: middle;
+}
+.feature-product img.show2 {
+    opacity: 0;
+    position: absolute;
+    max-width: 127px;
+    width: 45%;
+    margin-left: -132px;
+}
+.feature-product img.show2:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.feature-product .details {
+    display: inline-block;
+    vertical-align: middle;
+}
+.details .product-category {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.feature-product .options {
+    opacity: 0;
+    position: absolute;
+    padding: 0.5%;
+    width: 12%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: -20px;
+    margin-left: 130px;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.feature-product:hover .options {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.feature-product .options i.options-icons {
+    padding: 5%;
+    font-weight: 900;
+}
+.feature-product .options .options-icons:hover {
+    background-color: red;
+    border-radius: 50%;
+}
+.viewed-products {
+    cursor: pointer;
+}
+.viewed-products .product-name {
+    padding-bottom: 1%;
+}
+.product-name:hover {
+    color: red;
+    transition: color 0.5s ease-in-out;
+}
+.viewed-products .product-category {
+    font-size: 0.8rem;
+}
+.product-category:hover {
+    color: #40A944;
+    transition: color 0.5s ease-in-out;
+}
+.product-cost {
+    padding-top: 1%;
+    color: red;
+}
+.product-cost del {
+    padding-left: 2%;
+    color: black;
+    font-size: 0.8rem;
+}
+.viewed-products .show1 {
+    width: 100%;
+}
+.viewed-products .show2 {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    object-fit: contain;
+    width: 20%;
+    margin-top: 7px;
+    margin-left: -240px;
+    width: 100%;
+    max-width: 238px;
+}
+.viewed-products .show2:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+.viewed-products .options {
+    opacity: 0;
+    position: absolute;
+    padding: 0.5%;
+    width: 12%;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1%;
+    margin-top: -140px;
+    margin-left: 40px;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 2;
+}
+.viewed-products:hover .options {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.viewed-products .options i.options-icons {
+    padding: 5%;
+    font-weight: 900;
+}
+.viewed-products .options .options-icons:hover {
+    background-color: red;
+    border-radius: 50%;
+}
+.container5 hr, .container5 .slide {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.slide img {
+    width: 100%;
+}
+.slide:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.slick-slide {
+    height: auto;
+}
+.makeup-banner {
+    position: relative;
+    transition: 0.3s;
+}
+.makeup-banner:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 900ms linear;
+}
+.makeup-banner:hover::after {
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 900ms linear;
+}
+.makeup-banner:hover {
+    left: 0;
+    right: 0;
+	transition: all 900ms linear;
+}
+.makeup-banner::before {
+    background: rgba(255, 255, 255, 0.3);
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    right: 51%;
+    top: 0;
+    opacity: 1;
+    pointer-events: none;
+}
+.makeup-banner::after {
+    background: rgba(255, 255, 255, 0.6);
+    bottom: 50%;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    opacity: 1;
+    pointer-events: none;
+}
+.makeup-banner img {
+    width: 100%;
+    transition: 0.3s;
+}
+.most-viewed {
+    display: flex;
+    flex-flow: row wrap;
+}
+.most-viewed h2, .most-viewed p {
+    padding: 1%;
+    margin-left: 2%;
+    width: 100%;
+}
+.viewed-products {
+    width: 20%;
+    padding: 1%;
+}
+footer {
+    padding-top: 1%;
+}
+footer .row {
+    padding-bottom: 5%;
+}
+.footer-div {
+    width: 33%;
+    padding: 1%;
+}
+.about-safira {
+    padding: 1%;
+}
+.about-safira p {
+    opacity: 0.8;
+}
+.newsletter {
+    padding: 2%;
+}
+.newsletter h4, .newsletter p {
+    opacity: 0.8;
+}
+.newsletter h4, .newsletter p, .newsletter-input {
+    margin: 3%;
+}
+.newsletter-input input[type=text] {
+    padding: 1.5%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    outline: none;
+    border: 1px solid grey;
+}
+.newsletterbtn {
+    display: inline-block;
+    position: absolute;
+    padding: 0.5%;
+    font-size: 0.8rem;
+    background-color: red;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.newsletterbtn:hover {
+    background-color: black;
+}
+.about-safira img, .about-safira p {
+    margin: 3%;
+}
+.page-list {
+    display: flex;
+    text-align: left;
+    opacity: 0.8;
+}
+.page-list ul {
+    list-style-type: none;
+    width: 50%;
+    margin: 3%;
+}
+.page-list ul li {
+    margin: 5%;
+}
+
+.copyright {
+    display: flex;
+    padding: 1%;
+    background-color: black;
+}
+.copyright-text {
+    width: 50%;
+    padding: 1%;
+    padding-top: 2%;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.cards {
+    width: 50%;
+    padding-top: 1%;
+    text-align: right;
+    vertical-align: middle;
+}
+.cards img {
+    padding-left: 1%;
+    padding-bottom: 0.5%;
+    cursor: pointer;
+}
+.safira:hover {
+    transition: color 1.2s ease-in-out;
+    color: red;
+    cursor: pointer;
+}
+.hover-red:hover {
+    transition: color 0.5s ease-in-out;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* backtotop */
+.go-top {
+    display: none;
+  }
+  .visible{
+    font-family: 'Font Awesome\ 5 Free';
+    position: fixed;
+    bottom: 4.6em;
+    right: 2.5em;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1rem;
+    background-color: #40A944;
+    border: #ffffff;
+    border-radius: 50%;
+   display: block;
+   cursor: pointer;
+  }
+
