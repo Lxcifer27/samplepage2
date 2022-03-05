@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <title>Safira - Fashion HTML Template</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
@@ -697,7 +698,7 @@
          let slider = $(".slider");
      
          slider.not('.slick-initialized').slick({
-           autoplay: false,
+           autoplay: true,
            infinite: true,
            dots: false,
            arrows: false,
@@ -707,15 +708,15 @@
              {
                breakpoint: 1024,
                settings: {
-                 slidesToShow: 2,
-                 slidesToScroll: 2,
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
                  adaptiveHeight: true,
                },
              },
              {
                breakpoint: 600,
                settings: {
-                 slidesToShow: 1,
+                 slidesToShow: 2,
                  slidesToScroll: 1,
                },
              },
