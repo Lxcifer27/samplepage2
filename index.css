@@ -648,7 +648,7 @@ div.account-area div.wishlist-cart span {
 }
 
 .slide img {
-    width: 100%;
+    width: auto;
 }
 
 .slide:hover {
