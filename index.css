@@ -980,11 +980,42 @@ footer .row {
 
 /* for 720 devices */
 
-@media only screen and (min-width: 720px) {}
-
-@media only screen and (min-width: 836px) {}
-
-
-/* laptop screen */
-
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 720px) {
+    .search-wrapper {
+        display: block;
+    }
+    .search-wrapper input {
+        width: auto;
+    }
+    .logo {
+        width: 25%;
+        padding: 0.5rem;
+    }
+    .register-login, .wishlist-cart {
+        display: inline-block;
+        font-size: 1rem;
+    }
+    .slider-text {
+        top: 25%;
+        font-size: 1.5rem;
+    }
+    .gallery-pic {
+        width: 33%;
+    }
+    .product, .viewed-products {
+        width: 20%;
+    }
+    .discover {
+        margin-top: 170px;
+    right: 190px;
+    }
+    .extra {
+        width: 50%;
+    }
+    .feature-product {
+        width: 23%;
+    }
+    .feature-product img.show1 {
+        width: 100%;
+    }
+}
