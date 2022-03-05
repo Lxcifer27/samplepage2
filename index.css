@@ -1019,3 +1019,80 @@ footer .row {
         width: 100%;
     }
 }
+
+
+/* laptop screen */
+
+@media only screen and (min-width: 1280px) {
+    .container2 {
+        border: none;
+        margin: 0;
+    }
+    .search-wrapper input {
+        width: 450px;
+    }
+    .logo, .account-area {
+    padding-left: 10rem;
+    }
+    .register-login, .wishlist-cart {
+        font-size: 1.2rem; 
+    }
+    .navbar{
+        display: block;
+    }
+    .slider-text {
+        top: 40%;
+        font-size: 1.5rem;
+    }
+    .show2, .options {
+        display: block;
+    }
+    .product .show2 {
+        max-width: 225px;
+        margin-top: -218px;
+        margin-left: 0;
+    }
+    .discover {
+        padding: 10px 30px;
+    font-size: 25px;
+    margin-top: 300px;
+    right: 355px;
+    }
+    .extra {
+        width: 25%;
+    }
+    .feature-product {
+        width: 24%;
+        margin: 0;
+    }
+    .feature-product img.show1 {
+        width: 45%;
+    }
+    .feature-product img.show2 {
+        margin-left: 0;
+        margin-top: -130px;
+    }
+    .viewed-products .show2 {
+        margin-left: -5px;
+        margin-top: -230px;
+    }
+    .footer-div {
+        width: 33%;
+        padding: 1%;
+    }
+    .newsletterbtn {
+    padding: 0.54%;
+    }
+    .copyright-text, .cards {
+        width: 50%;
+    }
+    .visible {
+        bottom: 6.5rem;
+        right: 1.5em;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .newsletterbtn {
+        padding: 0.5%;
+    }
+}
