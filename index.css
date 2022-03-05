@@ -905,11 +905,15 @@ footer .row {
         font-size: 1rem;
     }
     .social-nav {
-        margin-right: 70px;
+        margin-right: 80px;
         padding: 0;
     }
     .logo, .section-banner {
         padding: 0;
+    }
+    .container2 {
+        border-bottom: 1px solid rgba(128, 128, 128);
+        margin-bottom: 0.5rem;
     }
     .slider-text {
         font-size: 0.7rem;
