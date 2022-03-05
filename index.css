@@ -163,7 +163,7 @@ div.account-area div.wishlist-cart span {
     margin-right: 0;
 }
 
-div.account-area span.item-count {
+.item-count {
     font-size: 0.8rem;
     background-color: rgba(128, 128, 128, 0.247);
     padding: 6px;
@@ -937,7 +937,46 @@ footer .row {
 
 /* for 480 devices */
 
-@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 480px) {
+    .search-wrapper, .register-login, .navbar {
+        display: none;
+    }
+    .lang-currency {
+        display: block;
+    }
+    .social-nav, .product {
+        width: 50%;
+    }
+    .social-nav {
+        margin-right: 0;
+    }
+    .account-area {
+        padding: 0;
+    }
+    .wishlist-cart {
+        margin-top: -7px;
+        font-size: 1.5rem;
+    }
+    .item-count {
+        background: none;
+    }
+    .slider-text {
+        font-size: 1rem;
+        top: 16px;
+    }
+    .discover {
+        padding: 5px;
+        font-size: 1rem;
+        margin-top: 110px;
+        right: 100px;
+    }
+    .extra {
+        padding-left: 1.5rem;
+    }
+    .newsletterbtn {
+        padding: 1.5%;
+    }
+}
 
 /* for 720 devices */
 
