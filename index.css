@@ -891,7 +891,7 @@ footer .row {
 /* media query */
 
 @media only screen and (min-width: 320px) {
-    .lang-currency, .search-wrapper, .register-login, .navbar {
+    .lang-currency, .search-wrapper, .register-login, .navbar, .show2, .options {
         display: none;
     }
     .social-nav, .gallery-pic, .product, .extra, .feature-product, .footer-div, .copyright-text, .cards {    
