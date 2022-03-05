@@ -170,7 +170,7 @@
                 </li>
                 <li>
                     Pages <i class="fa-thin fa-angle-down"></i>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu" style="width: 200px;">
                         <ul>
                             <li>About Us</li>
                             <li>Services</li>
@@ -192,7 +192,7 @@
                 </li>
             </ul>
         </nav>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script>
             $(document).ready(function () {
 
@@ -236,7 +236,7 @@
             $('.slider-area').slick({
                 dots: true,
                 arrows: true,
-                autoplay: true
+                autoplay: false
             })
 
         })
@@ -698,7 +698,7 @@
          let slider = $(".slider");
      
          slider.not('.slick-initialized').slick({
-           autoplay: true,
+           autoplay: false,
            infinite: true,
            dots: false,
            arrows: false,
